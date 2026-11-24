@@ -9,12 +9,12 @@ index.html      página do site
 css/style.css   estilos (cores e fontes K20)
 js/data.js      roteiro dia a dia, fotos, ingressos, lojas
 js/app.js       telas, animações, busca de sugestões, conversor
-fonts/          coloque aqui Lovelo-Black.woff2 (opcional)
+fotos/          personagens decorativos usados nas seções
 ```
 
 ## Como ver
 
-Abra o `index.html` no navegador. As fotos vêm da Wikimedia Commons e a fonte Lovelo do cdnfonts, então é preciso internet.
+Abra o `index.html` no navegador. As fotos vêm da Wikimedia Commons e a fonte Nunito Sans do Google Fonts, então é preciso internet.
 
 ## Publicar no GitHub Pages
 

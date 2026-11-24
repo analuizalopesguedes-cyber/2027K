@@ -189,6 +189,21 @@ $("#nightList").innerHTML = NIGHT.map(n => `
       ${n.t.map(t => `<a class="btn ticket" href="${t.url}" target="_blank" rel="noopener">${I.tk}${esc(t.label)}</a>`).join("")}</div>
     </div></article>`).join("");
 
+/* ---------- Mascotes decorativos ---------- */
+const mascotSections = ["antes", "passeios", "regioes", "lotte", "kpop", "noite", "dinheiro", "seguranca", "ferramentas", "sugestoes"];
+mascotSections.forEach((id, i) => {
+  const head = document.querySelector("#" + id + " .sec-head");
+  if (!head) return;
+  const mascotNumber = (i % 4) + 1;
+  const img = document.createElement("img");
+  img.className = "section-mascot mascot-" + mascotNumber;
+  img.src = "fotos/mascote-" + mascotNumber + ".png";
+  img.alt = "";
+  img.setAttribute("aria-hidden", "true");
+  img.loading = "lazy";
+  head.appendChild(img);
+});
+
 /* ---------- Frases ---------- */
 const PHRASES = [
   ["Quanto custa?", "얼마예요?"], ["Obrigada!", "감사합니다"], ["Onde fica o banheiro?", "화장실 어디예요?"],
