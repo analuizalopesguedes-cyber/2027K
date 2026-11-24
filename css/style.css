@@ -82,7 +82,7 @@ h1,h2,h3,.titulo{font-family:var(--f-title);font-weight:900;letter-spacing:-.025
 /* seções */
 section{padding-block:80px}
 .sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:34px}
-.section-mascot{display:block;flex:0 0 auto;width:clamp(58px,8vw,86px);height:clamp(58px,8vw,86px);object-fit:contain;align-self:flex-end;margin-left:auto;filter:drop-shadow(0 5px 7px rgba(42,10,27,.12));transform:rotate(-5deg);transition:transform .35s var(--ease)}
+.section-mascot{display:block;flex:0 0 auto;width:clamp(104px,12vw,148px);height:clamp(104px,12vw,148px);object-fit:contain;align-self:flex-end;margin-left:auto;filter:drop-shadow(0 7px 9px rgba(42,10,27,.14));transform:rotate(-5deg);transition:transform .35s var(--ease)}
 .section-mascot:hover{transform:translateY(-4px) rotate(4deg)}
 .section-mascot.mascot-2{transform:rotate(5deg)}
 .section-mascot.mascot-2:hover{transform:translateY(-4px) rotate(-4deg)}
@@ -276,7 +276,7 @@ footer a{color:#fff}
 footer p{margin:6px 0 0;opacity:.9;font-size:14px;max-width:60ch}
 .refs{columns:2;font-size:13px;opacity:.9;margin:0;padding-left:18px}
 @media (max-width:760px){.refs{columns:1}}
-@media (max-width:600px){.section-mascot{width:54px;height:54px;align-self:center;margin-left:auto}.sec-head{gap:10px}}
+@media (max-width:600px){.section-mascot{width:88px;height:88px;align-self:center;margin-left:auto}.sec-head{gap:10px}}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;font-size:14px;z-index:70;transition:transform .4s var(--ease)}
 .toast.on{transform:translate(-50%,0)}
 .totop{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:50px;height:50px;border-radius:50%;border:0;background:var(--cherry);color:#fff;cursor:pointer;box-shadow:0 12px 26px -10px var(--cherry);opacity:0;pointer-events:none;transform:scale(.6);transition:all .35s var(--ease);z-index:45}
